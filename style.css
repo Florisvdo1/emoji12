@@ -1,0 +1,176 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Header Styling */
+header {
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.icon-button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Huiswerk Section */
+#huiswerk-container {
+  padding: 15px;
+  text-align: center;
+}
+
+.huiswerk-placeholder {
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.huiswerk-button {
+  width: 100%;
+  padding: 10px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.huiswerk-button.green {
+  background: #28a745;
+  color: white;
+}
+
+/* Main Planner Styling */
+#planner {
+  padding: 15px;
+}
+
+.sector {
+  background: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.sector-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sector-header h2 {
+  font-size: 1.2rem;
+}
+
+.emoji-placeholders {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.emoji-placeholder {
+  width: 40px;
+  height: 40px;
+  border: 2px dashed #6c757d;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sector-notes {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Emoji Deck */
+#emoji-deck {
+  background: #ffffff;
+  border-top: 1px solid #ddd;
+  padding: 10px;
+}
+
+.emoji-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.emoji-grid div {
+  font-size: 1.5rem;
+  text-align: center;
+  cursor: grab;
+}
+
+.emoji-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.emoji-navigation button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.emoji-navigation span {
+  font-size: 1rem;
+}
+
+/* Confetti Styling */
+.confetti-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(255, 223, 128, 0.7), transparent);
+  animation: confetti-fall 1s ease-in-out forwards;
+}
+
+@keyframes confetti-fall {
+  0% {
+    opacity: 1;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
